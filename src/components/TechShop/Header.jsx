@@ -5,8 +5,8 @@ export default function Header() {
     return (
         <View style={styles.container}>
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10}}>
-                <Feather name="user" size={24} color="white" />
-                <Text style={styles.primary_text}>João Teixeira</Text>
+                <Feather name="shopping-cart" size={28} color="white" />
+                <Text style={styles.title}>Tech Shop</Text>
             </View>
         </View>
     )
@@ -19,11 +19,12 @@ const styles = StyleSheet.create({
         height: 65,
         marginBottom: 16,
         justifyContent: 'center',
+        alignItems: 'center',
         paddingInline: 25,
     },
-    primary_text: {
+    title: {
         color: '#FFFFFF',
-        fontSize: 20,
+        fontSize: 24,
         fontWeight: "semibold"
     }
 })
