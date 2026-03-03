@@ -5,7 +5,7 @@ export default function Header() {
         <View style={styles.container}>
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10}}>
                 <Image 
-                source={require('../../assets/pfp.png')}
+                source={{uri: 'http://github.com/ts-joao.png'}}
                 style={{ width: 40, height: 40, borderRadius: 20 }}/>
                 <Text style={styles.primary_text}>João Teixeira</Text>
             </View>
