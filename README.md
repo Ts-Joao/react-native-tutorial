@@ -9,6 +9,9 @@
 - O que é Expo? um framework para desenvolvimento mobile
 - Como estilizar um componente no React Native? importar o StyleSheet dentro de uma variavel e usar a função create, apos isso abrir ({}) dentro da chave vc criara as classes.
 - O estilo do React Native é igual ao CSS? Em partes, eh importante lembrar que funciona como o metodo camelCase
+- Em quais pacotes encontro um componente de Imagem? Qual melhor para usarmos atualmente? react native e expo-image. O melhor é expo-image. 
+- O que são propriedades de componente? são caracteristicas para reutilizarmos naquele componente.
+- O que são Hooks? São funcoes especias do react, useState e useEffect fazem parte do core, mas pode ser encontrados em outras bibliotecas, todos os hook comecam com a palavra use, e só podem ser usados no topLevel, e outras bibliotecas tambem pode conter hooks.
 
 ## Comandos Uteis
 
