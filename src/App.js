@@ -19,6 +19,7 @@ export default function App() {
         setIsLoading(false)
       } else {
         console.error('erro ao buscar usuarios', data)
+        setIsLoading(false)
       }
     }
     getUser()
