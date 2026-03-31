@@ -1,13 +1,17 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import Feather from '@expo/vector-icons/Feather';
+import { useRouter } from 'expo-router';
 
 export default function Header() {
+    const router = useRouter()
+
     return (
         <View style={styles.container}>
-            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10}}>
-                <Feather name="user" size={24} color="white" />
-                <Text style={styles.primary_text}>João Teixeira</Text>
-            </View>
+                <View style={{ flexDirection: 'row' }}>
+                    <Feather name="user" size={24} color="white" />
+                    <Text style={styles.primary_text}>João Teixeira</Text>
+                </View>
+                <Feather name="user-plus" size={24} color="white" onPress={() => router.push('/signup')} />
         </View>
     )
 }
@@ -18,8 +22,10 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 65,
         marginBottom: 16,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
+        alignItems: 'center',
         paddingInline: 25,
+        flexDirection: 'row'
     },
     primary_text: {
         color: '#FFFFFF',
